@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>PLP Web-Dev Week 2 Assignment; Enhancing Content</title>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#list">List</a></li>
+                    <li><a href="#table">Table</a></li>
+                    <li><a href="#media">Media</a></li>
+                    <li><a href="#form">Form</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-text">
+                    <h1>This page is for my frontend development Week 2 Assignment,</h1>
+                    <p>This assignment focuses on elevating my HTML5 skills by working with advanced content elements and mastering the creation, structure, and validation of web forms.</p>
+                    <p>Main focus includes; lists, tables, and media to enrich page content, and then dive deep into building dynamic, user-friendly forms powered by native HTML5 features.</p>
+                </div>
+            </section>
+
+            <section id="list">
+                <h2>Lists</h2>
+                
+                <!--Unordered list-->
+                <h3>Meal of the day!</h3>
+                <ul>
+                    <li>Breakfast items</li>
+                    <li>Fruits</li>
+                    <li>Vegetables</li>
+                    <li>Rice</li>
+                </ul>
+
+                <!--Ordered list-->
+                <h3>To-do List</h3>
+                <ol>
+                    <li>Wake Up</li>
+                    <li>Brush teeth</li>
+                    <li>Eat breakfast</li>
+                    <li>Go to work</li>
+                    <li>Practice Web Development</li>
+                </ol>
+
+                <!--Nested List-->
+                <h3>Schedule</h3>
+                <ul>
+                    <li>Weekend Activities
+                        <ul>
+                            <li>Hiking</li>
+                            <li>Reading</li>
+                            <li>Cooking</li>
+                            <li>Content creation</li>
+                        </ul>
+                    </li>
+
+                    <li>Weekday Activities
+                        <ul>
+                            <li>Working</li>
+                            <li>Exercising</li>
+                            <li>Relaxing</li>
+                        </ul>
+                    </li>
+
+                    <li>Miscellaneous
+                        <ul>
+                            <li>Yoga</li>
+                            <li>Gym</li>
+                            <li>Surfing the internet</li>
+                            <li>Sip and paint</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!--Table-->
+            <section id="table">
+                <h2>Table</h2>
+
+                <table border="1">
+                    <caption>Books in a library</caption>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Year Published</th>
+                            <th>Genre</th>
+                            <th>Availability</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>To kill a Mockingbird</td>
+                            <td>Harper Lee</td>
+                            <td>1960</td>
+                            <td>Fiction</td>
+                            <td>Available</td>
+                        </tr>
+
+                        <tr>
+                            <td>1984</td>
+                            <td>George Orwell</td>
+                            <td>1949</td>
+                            <td>Dystopian</td>
+                            <td>Checked Out</td>
+                        </tr>
+
+                        <tr>
+                            <td>The Great Gatsby</td>
+                            <td>F.Scott Fitzgerald</td>
+                            <td>1925</td>
+                            <td>Classic</td>
+                            <td>Available</td>
+                        </tr>
+
+                        <tr>
+                            <td>Pride and prejudice</td>
+                            <td>Jane Austen</td>
+                            <td>1813</td>
+                            <td>Romance</td>
+                            <td>Available</td>
+                        </tr>
+
+                        <tr>
+                            <td>The Hobbit</td>
+                            <td>J.R.R Tolkien</td>
+                            <td>1937</td>
+                            <td>Fantasy</td>
+                            <td>Checked Out</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="media">
+                <h2>Media</h2>
+
+                <h3>Image</h3>
+                <img src="media/building website illustration.jpeg" 
+                alt="Building Website Illustration" 
+                width="400">
+
+                <h3>Link enclosed in an image</h3>
+                <a href="https://www.w3schools.com/html/" target="_blank">
+                <img src="media/image.png" alt="Learn HTML from w3schools"
+                style="width: 400px; height: 200px;">
+                </a>
+
+                <h3>Gif</h3>
+                <img src="media/webdevelopment gif.gif"
+                alt="Web development process gif"
+                width="300">
+
+                <h3>Audio</h3>
+                <audio controls>
+                    <source src="media/True_Love_by_Maher_Zain.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element
+                </audio>
+
+                <h3>Video</h3>
+                <video controls>
+                    <source src="media/meme.mp4" type="video/mp4" alt="Meme of a person's morining routine" width="200">
+                    Your browser does not support the video element
+                </video>
+            </section>
+
+            <section id="form">
+            <h3>Form</h3>
+
+            <form>
+                <label for="name">Name</label><br />
+                <input type="text" id="name" name="Full_Name" required><br /><br />
+
+                <label for="email">Email</label><br />
+                <input type="email" id="email" name="email" required><br /><br />
+
+                <label for="password">Password</label><br />
+                <input type="password" id="password" name="password" placeholder="Minumum of 8 characters" pattern="^(?=.*[!@#$%^&*])(?=.{8,}.*$)" required><br /><br />
+
+                <label for="age">Age</label><br />
+                <input type="number" id="age" name="age" min="13" max="40"><br /><br />
+
+                <label>Gender</label><br />
+                <input type="radio" name="gender" value="Male">Male
+                <input type="radio" name="gender" value="Female">Female
+
+                <br /><br />
+
+                <label>Interests</label><br />
+                <input type="checkbox" name="interests" value="Coding">Coding
+                <input type="checkbox" name="interests" value="Cooking">Cooking
+                <input type="checkbox" name="interests" value="Reading">Reading
+                <input type="checkbox" name="interests" value="Sleeping">Sleeping
+
+                <br /><br />
+
+                <label>Country</label><br />
+                <select name="country" required>
+                    <option value="" disabled selected>Select your country</option>
+                    <option value="US">United States</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="Cameroon">Cameroon</option>
+                    <option value="South Africa">South Africa</option>
+                </select>
+
+                <br /><br />
+
+                <label for="bio">About You</label><br />
+                <textarea name="bio" rows="10" cols="50" placeholder="Write a short bio here"></textarea>
+
+                <br /><br />
+
+                <label for="picture">Profile Picture</label><br />
+                <input type="file" id="picture" name="picture" accept="image/*">
+
+                <br /><br />
+
+                <button type="submit">Submit</button>     
+            </form>
+            </section>
+        </main>
+    </body>
+
+</html>
